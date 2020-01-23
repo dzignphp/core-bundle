@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Dzign\AdminBundle\Command;
+namespace Dzign\AdminBundle\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Dzign\AdminBundle;
+namespace Dzign\AdminBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

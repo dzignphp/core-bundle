@@ -1,0 +1,35 @@
+{
+    "name": "dzignphp/admin-bundle",
+    "type": "symfony-bundle",
+    "description": "dzign",
+    "keywords": [
+        "Admin"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jérôme Drzewinski",
+            "email": "jdrzewinski@dzign.fr"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "symfony/framework-bundle": "5.0.*"
+    },
+    "config": {
+      "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Dzign\\AdminBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dzign\\AdminBundle\\Tests\\": "/Tests/"
+        }
+    }
+}

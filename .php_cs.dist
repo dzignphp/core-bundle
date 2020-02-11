@@ -5,9 +5,8 @@ return PhpCsFixer\Config::create()
         '@Symfony' => true,
         '@Symfony:risky' => true,
         'array_syntax' => ['syntax' => 'short'],
-        'fopen_flags' => false,
         'ordered_imports' => true,
-        'protected_to_private' => false,
+        'protected_to_private' => true,
         'phpdoc_types_order' => ['null_adjustment' => 'always_last', 'sort_algorithm' => 'none'],
     ])
     ->setRiskyAllowed(true)

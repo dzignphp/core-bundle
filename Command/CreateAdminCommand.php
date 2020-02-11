@@ -13,7 +13,7 @@ class CreateAdminCommand extends Command
     /**
      * {@inheritdoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Create an admin.')
@@ -23,8 +23,10 @@ class CreateAdminCommand extends Command
     /**
      * {@inheritdoc}
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): ?int
     {
         $output->writeln('coucou');
+
+        return 1;
     }
 }

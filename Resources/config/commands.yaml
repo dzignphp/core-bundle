@@ -1,0 +1,5 @@
+services:
+    dzign_admin.command.admin_create:
+        class: Dzign\AdminBundle\Command\CreateAdminCommand
+        tags:
+            - { name: console.command }

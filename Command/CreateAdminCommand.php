@@ -6,29 +6,10 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
-use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class CreateAdminCommand extends Command
 {
     protected static $defaultName = 'dzign:admin:create';
-
-    /**
-     * @var UserPasswordEncoderInterface
-     */
-    private $userPasswordEncoder;
-
-    /**
-     * @param string $name
-     * @param UserPasswordEncoderInterface $userPasswordEncoder
-     */
-    public function __construct(
-        ?string $name = null,
-        UserPasswordEncoderInterface $userPasswordEncoder
-    ) {
-        $this->userPasswordEncoder = $userPasswordEncoder;
-
-        parent::__construct($name);
-    }
 
     /**
      * {@inheritdoc}

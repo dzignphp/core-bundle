@@ -3,6 +3,7 @@
 namespace Dzign\Core\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Dzign\Core\Traits\IdentifiableTrait;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -12,13 +13,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class Admin implements UserInterface
 {
-    /**
-     * @var int
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
-     */
-    private $id;
+    use IdentifiableTrait;
 
     /**
      * @var bool
@@ -50,14 +45,6 @@ class Admin implements UserInterface
      * @Assert\NotBlank()
      */
     private $username;
-
-    /**
-     * @return int
-     */
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
     /**
      * @return bool

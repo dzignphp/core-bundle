@@ -1,0 +1,4 @@
+services:
+    dzign.core.security.admin_authentificator:
+        class: Dzign\Core\Security\Guard\AdminAuthentificator
+        arguments: ['@router.default']

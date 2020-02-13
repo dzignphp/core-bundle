@@ -1,5 +1,5 @@
 services:
-    dzign_admin.command.admin_create:
-        class: Dzign\AdminBundle\Command\CreateAdminCommand
+    dzign.core.command.admin_create:
+        class: Dzign\Core\Command\CreateAdminCommand
         tags:
             - { name: console.command }

@@ -1,13 +1,13 @@
 <?php
 
-namespace Dzign\AdminBundle\DependencyInjection;
+namespace Dzign\Core\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class DzignAdminExtension extends Extension
+class DzignCoreExtension extends Extension
 {
     /**
      * {@inheritdoc}

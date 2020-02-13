@@ -1,5 +1,5 @@
 {
-    "name": "dzignphp/admin-bundle",
+    "name": "dzignphp/core-bundle",
     "type": "symfony-bundle",
     "description": "dzign",
     "keywords": [
@@ -51,7 +51,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Dzign\\AdminBundle\\": ""
+            "Dzign\\Core\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"
@@ -59,7 +59,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Dzign\\AdminBundle\\Tests\\": "/Tests/"
+            "Dzign\\Core\\Tests\\": "/Tests/"
         }
     }
 }
